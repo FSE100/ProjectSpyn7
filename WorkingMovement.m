@@ -1,3 +1,5 @@
+%brick = ConnectBrick('EB3')
+brick.playTone(100, 200, 300)
 brick.ResetMotorAngle('AD')
 brickTouchSensor=0;
 while 1
