@@ -77,3 +77,4 @@ while 1
          brickTouchSensor = 0;
     end
 end
+end
