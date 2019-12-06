@@ -22,6 +22,9 @@ while 1
             brick.MoveMotor('A', -25)
             if (brick.ColorCode(1) == 5)
                 isColorRed = 1;
+            elseif (brick.ColorCode(1) == 3 && brick.GetMotorAngle('B')~= 0)
+                InitKeyboard();
+                isColorGreen = 1;
             end
         end
         if (brick.TouchPressed(3) == 1 || brick.TouchPressed(2) == 1)
@@ -76,5 +79,4 @@ while 1
          brick.WaitForMotor('A');
          brickTouchSensor = 0;
     end
-end
 end
